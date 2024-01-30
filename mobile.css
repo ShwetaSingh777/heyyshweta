@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main_logo{
+    display: none;
+}
+.small_logo{
+    width: 40px;
+}
+
+.icons{
+    display: none;
+}
+
+.hello{
+    display: none;
+}
+
+.sub_head_01{
+    display: none;
+}
+
+.sub_head_02{
+    display: none;
+}
+
+.sub_head_03{
+    display: none;
+}
+
+.sub_head_04{
+    display: none;
+}
+
+.sub_head_05{
+    display: none;
+}
+
+.sub_head_06{
+    display: none;
+}
+
+.sub_head_07{
+    display: none;
+}
+
+.sub_head_08{
+    display: none;
+}
+
+.blank{
+    display: none;
+}
+
+.padding_row_image{
+    margin-top: 20px;
+}
+
+#tarotCardContainer{
+    display: none;
+}

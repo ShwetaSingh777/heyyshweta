@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/Logos/favicon.svg">
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
+    <link rel="stylesheet" href="bs/css/mdb.css">
+    <link rel="stylesheet" href="bs/css/style.css">
+    <link rel="stylesheet" media="(max-width:1000px)" href="mobile.css">
+    <link rel="stylesheet" media="(min-width:1001px) and (max-width:1320px)" href="project_laptop.css">
+    <link rel="stylesheet" media="(min-width:1321px)" href="project_wide.css">
+    <title>Shweta X Jane</title>
+
+    <style>
+
+
+        ::-webkit-scrollbar {
+            display: none;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .screen {
+            position: relative;
+        }
+
+
+        .nav-link {
+            text-align:center !important;
+            font-family: 'Didact Gothic', sans serif !important;
+            font-size: large;
+            text-decoration: underline !important;
+        }
+
+        .navbar{
+            z-index: 10 !important;
+            height: 10vh;
+            transition: height 1s ease-in-out;
+            box-shadow: none;
+        }
+
+        .navbar-nav{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+
+        }
+
+        .navbar.active{
+            height: 10vh;
+        }
+
+        .navbar-collapse{
+            background-color: #000000;
+            padding: 20px;
+            position: fixed;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+            height: 90vh;
+            overflow-y: auto;
+
+        }
+
+        .navbar.active .navbar-collapse{
+            display: block;
+        }
+        .bg-nav{
+            background-color: #000000;
+        }
+
+
+
+        .content-above{
+            position: absolute;
+            width: 100%;
+        }
+        .top_bar{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .about, .projects{
+            z-index: 9;
+            bottom: 0;
+            position: fixed;
+        }
+
+
+        h1{
+            font-family: 'Playfair Display', serif;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<!-----------Start------------->
+
+<div class="screen">
+
+    <!---------------------Navbar------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav px-5">
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/Logos/Logo_white.png" class="small_logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a href="BTS.html" class="nav-link">The One Where I collaborated with BTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Jane.html" class="nav-link">The One With Comical Direction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Card.html" class="nav-link">The One With Feminist Tarot Card Reader</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Tanjo_noto.html" class="nav-link">The One Where Guides Became Sarcastic</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Illustrations.html" class="nav-link">Illustrations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/shweta_feed/" target="_blank" class="nav-link">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto: shweta2861@gmail.com" target="_blank" class="nav-link">Email</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/shweta-0609aa222/" target="_blank" class="nav-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---------------Content above the image-------------->
+
+    <div class="content-above">
+
+
+        <!--------------------------Wide_screen's_Navbar------------------------>
+
+        <div class="top_bar">
+
+
+            <!----------------------logo------------------>
+            <div class="p-5 logo">
+                <a href="index.html"><img src="Images/Logos/Main_logo.png" class="main_logo" onmouseover="this.src='Images/Logos/Main_logo_black.png'"
+                                          onmouseout="this.src='Images/Logos/Main_logo.png'"></a>
+            </div>
+
+            <!------------------------Software Logos------------------------>
+            <div class="p-5 software">
+                <img src="Images/Logos/Photoshop_bw.png" class="icons ml-2" onmouseover="this.src='Images/Logos/Photoshop_logo.png'"
+                     onmouseout="this.src='Images/Logos/Photoshop_bw.png'">
+                <img src="Images/Logos/Illustrator_bw.png" class="icons ml-2" onmouseover="this.src='Images/Logos/Illustrator-Logo.png'"
+                     onmouseout="this.src='Images/Logos/Illustrator_bw.png'">
+                <img src="Images/Logos/After_effects_bw.png" class="icons ml-2" onmouseover="this.src='Images/Logos/AE_logo.png'"
+                     onmouseout="this.src='Images/Logos/After_effects_bw.png'">
+            </div>
+
+        </div>
+
+        <!------------------------------Social Media------------------------------->
+        <div class="projects pb-5">
+            <a href="https://www.linkedin.com/in/shweta-0609aa222/" target="_blank"><img src="Images/Home_Page/Linked_01.png" class="sub_head_08" onmouseover="this.src='Images/Home_Page/Linked_02.png'"
+                                                                                         onmouseout="this.src='Images/Home_Page/Linked_01.png'">
+            </a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="mailto: shweta2861@gmail.com" target="_blank"><img src="Images/Home_Page/Email_01.png" class="sub_head_07" onmouseover="this.src='Images/Home_Page/Email_02.png'"
+                                                                        onmouseout="this.src='Images/Home_Page/Email_01.png'">
+            </a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="https://www.instagram.com/shweta_feed/" target="_blank">
+                <img src="Images/Home_Page/Insta_01.png" class="sub_head_06" onmouseover="this.src='Images/Home_Page/Insta_02.png'"
+                     onmouseout="this.src='Images/Home_Page/Insta_01.png'">
+            </a>
+        </div>
+
+        <!------------------------------Projects------------------------------->
+
+        <div class="projects pb-5">
+            <a href="Illustrations.html"><img src="Images/Home_Page/Illustration_01.png" class="sub_head_05" onmouseover="this.src='Images/Home_Page/Illustration_02.png'"
+                                              onmouseout="this.src='Images/Home_Page/Illustration_01.png'"></a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="Tanjo_noto.html"><img src="Images/Home_Page/Project_4a.png" class="sub_head_04" onmouseover="this.src='Images/Home_Page/Project_4b.png'"
+                                           onmouseout="this.src='Images/Home_Page/Project_4a.png'"></a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="Card.html"><img src="Images/Home_Page/Project_3a.png" class="sub_head_03" onmouseover="this.src='Images/Home_Page/Project_3b.png'"
+                                     onmouseout="this.src='Images/Home_Page/Project_3a.png'"></a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="Jane.html"><img src="Images/Home_Page/Project_2b.png" class="sub_head_02"></a>
+        </div>
+
+        <div class="projects pb-5">
+            <a href="BTS.html"><img src="Images/Home_Page/Project_1a.png" class="sub_head_01" onmouseover="this.src='Images/Home_Page/Project_1b.png'"
+                                    onmouseout="this.src='Images/Home_Page/Project_1a.png'"></a>
+        </div>
+
+        <!------------------------------About------------------------------->
+        <div class="about pl-5 pb-5">
+            <img src="Images/Jane/Jane_text.png" class="hello">
+        </div>
+
+
+    </div>
+
+
+
+    <!-------------------------Content Image---------------------->
+    <div>
+        <img src="Images/Jane/Mock_01.png" width="100%" alt="">
+    </div>
+
+    <div class="row context m-4">
+        <div class="col-md-6">
+            <img src="Images/Jane/Jane_text.png" width="100%" alt="">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    <div>
+        <video width="100%" controls class="p-4 on-top">
+            <source src="Images/Jane/Mock_02.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="row on-top m-4">
+        <div class="col-md-8">
+            <img src="Images/Jane/Mock_03.png" width="100%" alt="">
+        </div>
+        <div class="col-md-4 padding_row_image">
+            <img src="Images/Jane/Mock_04.png" width="100%" alt="">
+        </div>
+    </div>
+    <div class="row on-top m-4">
+        <div class="col-md-6">
+            <img src="Images/Jane/Mock_05.png" width="100%" alt="">
+        </div>
+        <div class="col-md-6 padding_row_image">
+            <img src="Images/Jane/Mock_06.png" width="100%" alt="">
+        </div>
+    </div>
+    <div class="row m-4 on-top">
+        <div class="col-md-6">
+            <img src="Images/Jane/Mock_07.png" width="100%" alt="">
+        </div>
+        <div class="col-md-6 padding_row_image">
+            <img src="Images/Jane/Mock_08.png" width="100%" alt="">
+        </div>
+    </div>
+
+    <div>
+        <img src="Images/Jane/Mock_09.png"  class="on-top" width="100%" alt="">
+    </div>
+
+    <div class="blank">
+
+    </div>
+
+
+
+
+
+    <script src="bs/js/jquery.js"></script>
+    <script>
+        var $jq = jQuery.noConflict();
+    </script>
+    <script src="bs/js/popper.js"></script>
+    <script src="bs/js/bootstrap.js"></script>
+    <script src="bs/js/mdb.js"></script>
+
+</body>
+</html>
+

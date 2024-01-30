@@ -1,0 +1,21 @@
+
+
+.navbar{
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.right-align{
+   text-align: right;
+}
+
+.right-text-padding{
+    padding-top: 20vh !important;
+    padding-bottom: 20vh !important;
+    padding-left: 20vh !important;
+}
+
+.top-margin{
+    margin-top: 20vh !important;
+    margin-bottom: 20vh !important;
+}
